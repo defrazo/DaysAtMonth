@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>How much days?!</title>
+	<link rel="stylesheet" href="./css/styles.css">
+<script type="text/javascript">
+    function validate(){
+		var sel = document.getElementById("to"); 
+		var val = sel.options[sel.selectedIndex].value;
+			switch(val) {
+					case "1":month = "31 день"; break;
+					case "2":month = "29 дней"; break;
+					case "3":month = "31 дней"; break;
+					case "4":month = "30 дней"; break;
+					case "5":month = "31 дней"; break;
+					case "6":month = "30 дней"; break;
+					case "7":month = "31 дней"; break;
+					case "8":month = "31 дней"; break;
+					case "9":month = "30 дней"; break;
+					case "10":month = "31 дней"; break;
+					case "11":month = "30 дней"; break;
+					case "12":month = "31 дней"; break;
+			}
+	alert(month);
+    }
+</script>
+</head>
+<body>
+<div align="center" class="box1">
+<h1>Программа для определения количества дней в месяце</h1>
+<h2>Внимание! При использовании данной программы будьте предельно осторожны!</h2>
+<h3>Работает только с 2016 годом! </h3>
+</div>
+<div align="center" class="box2">
+<h4>Выберите из списка название месяца и нажмите кнопку "Узнать"</h4>
+  <form id="forma">
+    <table>
+      <tr>
+        <td>Выберите месяц</td>
+        <td>
+          <select id="to">
+            <option></option>
+            <option value="1">Январь</option>
+            <option value="2">Февраль</option>
+            <option value="3">Март</option>
+			<option value="4">Апрель</option>
+			<option value="5">Май</option>
+			<option value="6">Июнь</option>
+			<option value="7">Июль</option>
+			<option value="8">Август</option>
+			<option value="9">Сентябрь</option>
+			<option value="10">Октябрь</option>
+			<option value="11">Ноябрь</option>
+			<option value="12">Декабрь</option>
+          </select>
+        </td>
+      </tr>
+    </table> 
+  </form>
+<input type="button" onclick="validate()" value="Узнать" class="button">
+</div>
+</body>
+</html>
